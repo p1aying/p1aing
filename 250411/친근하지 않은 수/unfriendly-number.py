@@ -1,9 +1,6 @@
-a = [x for x in range(int(input()))]
-b = []
-
-for i in range(1, len(a)):
-    if (a[i] % 2 == 0) or (a[i] % 5 == 0) or (a[i] % 3 == 0):
-        b.append(a[i])
-    else:
-        continue
-print(len(a) - len(b))
+n = int(input())
+cnt = 0
+for i in range(1, n):  # 1부터 n-1까지
+    if (i % 2 != 0) and (i % 3 != 0) and (i % 5 != 0):
+        cnt += 1
+print(cnt)
