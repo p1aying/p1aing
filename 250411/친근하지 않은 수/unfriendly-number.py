@@ -1,4 +1,4 @@
-a=[x for x in range(int(input()))]
+a=[x for x in range(1,int(input()))]
 b=[]
 
 for i in range(len(a)):
