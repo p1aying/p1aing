@@ -1,10 +1,10 @@
-a=[x for x in range(int(input()))]
-#print(a)
-b=[]
+n = int(input())
+b = []
 
-for i in range(1,len(a)):
-    if (a[i]%2==0) or (a[i]%5==0) or (a[i]%3==0):
-       b.append(a[i]) 
+for i in range(1, n):  # 1부터 n-1까지
+    if (i % 2 == 0) or (i % 5 == 0) or (i % 3 == 0):
+        b.append(i)
     else:
         continue
-print(len(a)-len(b)-1)
+
+print((n - 1) - len(b))  # 실제 검사한 수의 총 개수 - b의 길이
