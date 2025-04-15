@@ -10,4 +10,4 @@ for i in range(len(mylist)):
         mysum2+=mylist[i]
         count+=1
 print(mysum,end=" ")
-print(mysum2/count)
+print(f"{mysum2/count:.1f}")
