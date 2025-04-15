@@ -7,7 +7,7 @@ for i in range(1,n+1):
         new_list=[]
     else:
         for ii in range(len(new_num)):
-            if new_num[ii]==("3" or "6" or "9"):
+            if new_num[ii]=="3"or new_num[ii]== "6" or new_num[ii]== "9":
                 print(0, end=" ")
                 count+=1
                 break
