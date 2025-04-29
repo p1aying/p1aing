@@ -1,6 +1,5 @@
 a = input()
 num=list(a)
-num_temp=list(a)
 sum_list=[]
 sum=0
 for i in range(len(num)):
@@ -22,7 +21,7 @@ for i in range(len(num)):
             k+=1
         sum_list.append(sum)
         sum=0
-    num=num_temp
+    num=list(a)
     #print(num)
 print(max(sum_list))
 
